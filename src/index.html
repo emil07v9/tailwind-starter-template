@@ -6,11 +6,305 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tailwind Starter Template</title>
     <link rel="stylesheet" href="tailwind.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Coustard&family=Passion+One&family=Poppins:wght@300;700&family=Raleway:wght@300&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1 class="bg-indigo-700 text-violet-50 hover:bg-indigo-300">
-      Hello Tailwind CSS
-    </h1>
-    <script type="module" src="index.js"></script>
+    <main>
+      <!-- Sektion 1: Hero -->
+      <section id="first" class="bg-[#E03534]">
+          <article class="grid grid-cols-2 relative">
+            <div class=" my-auto absolute bottom-left ml-2 top-1 right-2 md:top-5 lg:top-20 text-right">
+            <h1 class="font-bold text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-white">KØBENHAVNER <br> BILLEDER</h1>
+            <h2 class="bottom-4 text-white text-xl font-thin">- en guide til 
+hipster foto</h2>
+<p class="text-white mb-4 sm:mb-6">Af Sten Simons</p>
+ <a class="bg-[#EDE6D6] text-[#E03534] px-5 py-2 font-bold hover:bg-[#E03534] hover:text-[#EDE6D6] border-solid border-2 border-[#EDE6D6] md:px-14 md:py-3 lg:px-20 lg:py-4 underline" href="#">KØB BOGEN NU</a>
+            </div>
+            <img src="img/hero1.png" alt="">
+          </article>
+      </section>
+
+      <!-- Sektion 2: Om bogen -->
+      <section class="mx-3 mt-20">
+        <div class="prose md:mx-auto">
+        <h2 class="text-center text-4xl md:text-6xl font-bold">
+          DIN PERSONLIGE FOTOGUIDE
+        </h2>
+        <p>
+            Københavnerbilleder er de danske streetfotografers bibel: Det er en
+            fusion mellem et kunstværk og en lærebog. Bogen gennemgår alle
+            væsentlige aspekter af streetfotografering fra grundlæggende teknik
+            til kreative eksperimenter. Alt sammen krydret med masser af
+            inspirerende fotos. God læselyst!
+          </p>
+        <h2 class="text-xl font-thin">Kort og godt</h2>
+        <div class="md:grid grid-cols-2">
+        <div>
+           <p> <b class="text-[#E03534]">Titel:</b>
+            Københavnerbilleder - en guide til hipster foto
+          </p>
+          <p><b class="text-[#E03534]"> Forfatter:</b> Sten Simons</p>
+          <p><b class="text-[#E03534]"> Antal sider:</b> 344</p>
+          </div>
+          <div>
+          <p><b class="text-[#E03534]"> Forlag:</b> Mellem Linjerne</p>
+          <p><b class="text-[#E03534]"> ISBN:</b> 987-6-987654-32-1</p>
+          <p><b class="text-[#E03534]"> Pris:</b> 399.-</p>
+          </div>
+          </div>
+        </div>
+        <div class="md:grid grid-cols-3 md:gap-2">
+          <img class src="img/bog1.jpg" alt="" />
+        <img src="img/bog2.jpg" alt="" />
+        <img src="img/bog3.png" alt="">
+        </div>
+
+      </section>
+
+      <!-- Sektion 3: Kapitler -->
+      <section class="mt-20 bg-[#EDE6D6]">
+        <div class="prose md: mx-3 pt-20 pb-20 md:mx-auto">
+          <h2 class="text-center text-4xl md:text-6xl sm:text-center">
+            BOGENS KAPITLER
+          </h2>
+          <!-- Kapitler start -->
+          <div class="md:grid md:grid-cols-2">
+            <article class="flex md:mx-2">
+              <h3 class="mt-6 pr-2 text-5xl text-[#E03534]">1</h3>
+              <div>
+                <h4 class="text-2xl font-light">
+                  Intro til street foto
+                </h4>
+                <p>
+                  Hvad er street foto? Det handler i bund og grund om at skyde
+                  byens liv og byens geometri (urban geometry). I dette kapitel
+                  får du en grundig intro til hvad street foto er og et overblik
+                  over nogen af de kendte street-fotografer. Alt krydret med en
+                  masse gode eksempler på street fotos.
+                </p>
+              </div>
+            </article>
+            <article class="flex md:mx-2">
+              <h3 class="mt-6 pr-2 text-5xl text-[#E03534]">2</h3>
+              <div>
+                <h4 class="text-2xl font-light">
+                  Om at skyde street
+                </h4>
+                <p>
+                  Vil du skyde street? Så er der ikke nogen vej udenom: Du skal
+                  ud på gaderne og prøve det! I dette kapitel får du en teknisk
+                  indføring i hvordan du bedst skyder street. Uanset om du er
+                  begynder eller professionel, er der mange gode tekniske tips
+                  og tricks til street-skyderiet.
+                </p>
+              </div>
+            </article>
+            <article class="flex md:mx-2">
+              <h3 class="mt-6 pr-2 text-5xl text-[#E03534]">3</h3>
+              <div>
+                <h4 class="text-2xl font-light">
+                  Om at finde det rette motiv
+                </h4>
+                <p>
+                  Indimellem er man heldig, andre gange kommer man hjem helt
+                  uden gode motiver. Med et par tips og tricks til at finde de
+                  rette motiver, stiger chancen gevaldigt for at fange de gode
+                  motiver.
+                </p>
+              </div>
+            </article>
+            <article class="flex md:mx-2">
+              <h3 class="mt-6 pr-2 text-5xl text-[#E03534]">4</h3>
+              <div>
+                <h4 class="text-2xl font-light">
+                  Digital street foto
+                </h4>
+                <p>
+                  De fleste af os skyder oftest digitalt fordi det er billigere
+                  og nemmere. Og nogen teknikker og fremgangsmåder egner sig kun
+                  til digital street foto. I dette kapitel får du en række tips
+                  og tricks til digital street-foto.
+                </p>
+              </div>
+            </article>
+            <article class="flex md:mx-2">
+              <h3 class="mt-6 pr-2 text-5xl text-[#E03534]">5</h3>
+              <div>
+                <h4 class="text-2xl font-light">
+                  Analog street foto
+                </h4>
+                <p>
+                  Analog er sejt fordi det er mere “ægte,” dyrere og mere
+                  besværligt end digital. Det signalerer entusiasme. Nogle
+                  teknikker og fremgangsmåder egner sig bedst til analog street
+                  foto. I dette kapitel får du en række tips og tricks til
+                  analog street-foto.
+                </p>
+              </div>
+            </article>
+            <article class="flex md:mx-2">
+              <h3 class="mt-6 pr-2 text-5xl text-[#E03534]">6</h3>
+              <div>
+                <h4 class="text-2xl font-light">
+                  Om at skyde sort/hvid
+                </h4>
+                <p>
+                  Alle street-fotografer skyder sort/hvid nu og da. Nogen altid.
+                  Hvorfor? Hvad er der specielt ved sort/hvid fotografering, og
+                  hvad adskiller sort/hvid fra farvefotografering? Her får du en
+                  række tips og tricks til sort/hvid fotografering.
+                </p>
+              </div>
+            </article>
+            <article class="flex md:mx-2">
+              <h3 class="mt-6 pr-2 text-5xl text-[#E03534]">7</h3>
+              <div>
+                <h4 class="text-2xl font-light">
+                  Kreative teknikker
+                </h4>
+                <p>
+                  Dobbelteksponeringer, ICM (intentional camera moves), smadrede
+                  objektiver, gamle filmruller og alle mulige andre, spændende
+                  kreative teknikker kan løfte dine fotografier fra at være
+                  kedelige dokumentationer af hverdagen til at blive vilde
+                  kunststykker. Så dyk ned i dette kapitel om eksperimenterende
+                  teknikker!
+                </p>
+              </div>
+            </article>
+            <article class="flex md:mx-2">
+              <h3 class="mt-6 pr-2 text-5xl text-[#E03534]">8</h3>
+              <div>
+                <h4 class="text-2xl font-light">Kom helt tæt på!</h4>
+                <p>
+                  Street foto handler om at fotografere livet på gaden - men tør
+                  du at gå helt tæt på fremmede mennesker og knipse løs? Du kan
+                  lige så godt øve dig, for det er det der vil gøre dig til en
+                  bedre street-fotograf…
+                </p>
+              </div>
+            </article>
+          </div>
+           <a class="flex justify-center hover:bg-[#EDE6D6] hover:text-[#E03534] px-5 py-2 font-bold bg-[#E03534] text-[#EDE6D6] border-solid border-2 border-[#E03534] md:px-14 md:py-3 lg:px-20 lg:py-4" href="#">DOWNLOAD FØRSTE KAPITEL HER</a>
+        </div>
+      </section>
+
+      <!-- Sektion 4: Galleri -->
+      <section class="mt-20 mb-0 pb-0 sm:mx-2 flex justify-center">
+        <div class="">
+          <h2 class="text-center text-4xl md:text-6xl font-bold sm:text-center mb-10">
+            ET KIG I GALLERIET
+          </h2>
+          <div class="sm:grid sm:grid-cols-2 lg:grid-cols-3">
+              <img class="p-1" src="img/1gal.svg" alt="" />
+            <img class="p-1" src="img/2gal.svg" alt="" />
+            <img class="p-1" src="img/3gal.svg" alt="" />
+            <img class="p-1" src="img/4gal.svg" alt="" />
+            <img class="p-1" src="img/5gal.svg" alt="" />
+            <img class="p-1" src="img/6gal.svg" alt="" />
+        </div>
+      </section>
+
+      <!-- Sektion 5: Anmeldelser -->
+      <section class="mx-5 mt-20 sm:mx-10 md:mx-20 sm:items-center">
+        <h2 class="text-center text-4xl md:text-6xl mb-10 font-bold">DET SIGER LÆSERNE</h2>
+        <div class="md:grid grid-cols-2 gap-10">
+        <article class="mb-5">
+          <div class="flex justify-center">
+            <img class="mb-4" src="img/stjerne1.svg" alt="" />
+          </div>
+          <div class="flex">
+            <p class="quote mx-1 mt-0 text-6xl text-[#E03534]">"</p>
+            <p>
+              <i
+                >Københavnerbilleder er en grundig introduktion til at skyde
+                billeder med retro-kant. Hvad enten du er har arbejdet med foto
+                siden 135-filmen kom på markedet, du kun har skudt digitalt
+                eller er helt nybegynder, er der masser af tips og tricks i
+                bogen.
+              </i>
+              <br />
+              <b> - Hanne Hovgaard, Berlingeren </b>
+            </p>
+            <p class="quote mx-1 mt-10 pb-0 text-6xl text-[#E03534]">„</p>
+          </div>
+        </article>
+        <article class="mb-0">
+          <div class="flex justify-center">
+            <img class="mb-4" src="img/stjerne2.svg" alt="" />
+          </div>
+          <div class="flex">
+            <p class="quote mt-0 mr-1 text-6xl text-[#E03534]">"</p>
+            <p>
+              <i
+                >Teksten er underholdende, og billederne er sku’ flotte. Hvad
+                mere skal man sige om en fotobog?</i
+              >
+              <br />
+              <b> - Kim Kloggaard, Fotojournalen.dk</b>
+            </p>
+            <p class="quote mx-1 mt-10 pb-0 text-6xl text-[#E03534]">„</p>
+          </div>
+        </article>
+        </div>
+        <article class="mb-10 prose items-center mx-auto">
+          <div class="flex justify-center">
+            <img class="mb-4" src="img/stjerne3.svg" alt="" />
+          </div>
+          <div class="flex">
+            <p class="quote mx-1 mt-0 text-6xl text-[#E03534]">"</p>
+            <p>
+              <i>
+                Sten Simons kan det der - og han bliver bedre og bedre. Stens
+                tredje fotobog er klart den bedste - her er han for alvor i sit
+                rette element, meget bedre end “studiefotografering som
+                begyndere.” Tillykke - godt arbejde.
+              </i>
+              <br />
+              <b> - Volmer Hansen, Lukkertiden.dk</b>
+            </p>
+            <p class="quote mx-1 mt-10 pb-0 text-6xl text-[#E03534]">„</p>
+          </div>
+        </article>
+      </section>
+
+      <!-- Sektion 6: om forfatteren -->
+      <section class="mt-20 bg-[#E03534]">
+        <div class="prose mx-3 pt-20 pb-20 md:mx-auto">
+          <h2 class="text-center text-4xl md:text-6xl text-white">BAG OM FORFATTEREN</h2>
+          <article class="md:grid grid-cols-2 md:gap-2 ">
+            <img src="img/ff.png" alt="" />
+            <div>
+              <p class="text-white">
+                Sten Simons har en lang foto-karriere bag sig. Det hele startede
+                i 00’erne, da han gik rundt i Pisserenden for at fotografere
+                ungdommens forfald. Det ledte til en række udstillinger, og blev
+                senere til hans først fotobog “Ungdomsdruk - pinlige billeder
+                fra nattelivet.” Derefter tog karrieren fart: Han blev
+                fotojournalist og dokumenterede en masse dagligdagsstof fra
+                Amager på dagbladet “Amagerkaneren.” Sideløbende begyndte han at
+                undervise i foto, og har skrevet et utal af bøger, herunder
+                bestsellerne Scener fra S-toget, Brun mad - en visuel odysse, og
+                lærebogen Fotografering for evnesvage.
+              </p>
+            </div>
+          </article>
+           <a class="bg-[#EDE6D6] text-[#E03534] px-5 py-2 font-bold hover:bg-[#E03534] hover:text-[#EDE6D6] border-solid border-2 border-[#EDE6D6] md:px-14 md:py-3 lg:px-20 lg:py-4 underline text-center flex justify-center" href="#">KØB NU</a>
+        </div>
+        <div class="flex justify-end">
+            <a
+              class="mb-10 mr-5 no-underline text-white text-4xl"
+              href="#first"
+              >↑</a
+            >
+          </div>
+      </section>
+    </main>
+       <script type="module" src="index.js"></script>
   </body>
 </html>

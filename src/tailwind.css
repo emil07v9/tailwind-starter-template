@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "poppins", sans-serif;
+  }
+  p {
+    font-family: "raleway", sans-serif;
+  }
+}
+
+.quote {
+  font-family: "Coustard", serif;
+}
